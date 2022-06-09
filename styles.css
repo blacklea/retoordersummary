@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 720px;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: cover;
+    font-size: 16px;
+    position: relative;
+    
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.text {
+    padding: 7%;
+    text-align: center;
+}
+
+.header {
+    color: hsl(223, 47%, 23%);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    
+}
+
+.text p.header2 {
+    color: #8a8a8a;
+    margin-bottom: 25px;
+}
+
+.content {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.content2 div {
+    margin-left: 20px;
+}
+
+.content2 div h5 {
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.content2 div p {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.content a {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: color .3s ease;
+}
+
+.content a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+a.paypal {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+    transition: background-color .3s ease;
+}
+
+a.paypal:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+a.cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color .3s ease;
+}
+
+a.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 87%;
+    }
+
+    .header {
+        font-size: 23px;
+    }
+
+    div.content {
+        padding: 12px;
+    }
+
+    .content2 div {
+        margin-left: 10px;
+    }
+
+    a.paypal,
+    a.cancel,
+    .content a {
+        font-size: 13px;
+    }
+
+    .text {
+        padding: 9% 7%;
+    }
+}
